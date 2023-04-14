@@ -1,0 +1,11 @@
+.tooLow {
+    background-color: orange;
+}
+
+.tooHigh {
+    background-color: red;
+}
+
+.normal {
+    background-color: green;
+}

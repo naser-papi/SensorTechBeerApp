@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "temperature": 0,
+    "state": -1,
+    "spoiled": false
+  },
+  {
+    "id": "2",
+    "temperature": 8,
+    "state": 1,
+    "spoiled": false
+  },
+  {
+    "id": "3",
+    "temperature": 5,
+    "state": 0,
+    "spoiled": false
+  }
+]

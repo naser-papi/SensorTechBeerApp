@@ -1,3 +1,4 @@
+
 # SensorTech Beer App
 
 This is a full-stack javascript (node/react) application for SensorTech company in order to monitor the current
@@ -23,15 +24,35 @@ To open the cypress window and run tests please run this command in the frontend
 You should see three different test categories in the cypress window and by clicking on each one you can run all
 implemented tests for this app.
 
+You should all my written test in this path:
+
+## frontend-web\cypress\integration
+
+### (fixture folder contains the mock data)
+
+all added scenarios are well documented in its file, please.
+
 ## Questions :
 
-1- If refrigeration (container) temperature is less or more than normal for a while what should happen?
-2- how about the history or log of temperature, I think we should record a log of sensor's temperature.
-3- Do you need to play a sound when the temperature goes out of range?
+#### 1- If refrigeration (container) temperature is less or more than normal for a while what should happen?
 
-Tests that can be added:
-1- client should call api just in 5 seconds.
+#### 2- how about the history or log of temperature, I think we should record a log of sensor's temperature.
 
-## Suggestions:
+#### 3- Do you need to play a sound when the temperature goes out of range?
 
-1- if a sensor temperature goes out of range for a while we can set the product as a spoiled one.
+## Tests that can be added:
+
+#### 1- client should call api just in 5 seconds.
+
+## TODOs:
+
+#### 1- if a sensor temperature goes out of range for a while we can set the product as a spoiled one.
+
+#### 2- add more style and implement a user friendly monitor view.
+
+#### 3- play sounds when temperature goes out of range.
+
+#### 4- seprate loading list of products in a different function;
+
+#### 5- integrating the cypress with CI/CD before publish for production
+

@@ -33,6 +33,7 @@ Backlog and work on it. The card says:
 Improve test coverage (refactor if needed)
 
 ## solution
+
 This is a full-stack javascript (node/react) application for SensorTech company in order to monitor the current
 temperature of each beer container in the Brewery trucks.
 I changed the project from tow separated repo to a single repo with my favorite structure.
@@ -42,7 +43,38 @@ this project has two folders:
 
 - 2- frontend-web (contains a CRA code to show the list of sensors and current states)
 
+# backend
 
+we have tow different get route in the backed code:
 
+- /api/productList that returns the list of available products (beers)
+  - here is the source code: [click here](/backend/index.js)
+- /api/temperature/:id that return current temperature of beer each holder by passed id
+  - you can see the code here: [click here](/backend/index.js)
+  - this method uses a utility function to normalize the result object
+    with a specific property named "status" that shows how far temperature is away from normal temp.
 
+# backed tests
+
+all tests for this application are implemeted by utilizing Cypress E2E test tool,
+<br/>and I have used ["@cypress/code-coverage"](https://docs.cypress.io/guides/tooling/code-coverage) plugin to monitor
+code-coverage reports.
+<br/>additionally I have used [cypress-plugin-api](https://github.com/filiphric/cypress-plugin-api) plugin to visualize
+the API test window.
+<br/>in my opinion, by utilizing this plugin there is no need to use PostMan or swagger to test APIs anymore
+<br/>there are two tests that are implemented in [backend.cy.js](/backend/cypress/e2e/backend.cy.js) as spec a file:
+
+- [List Of Products](/backend/cypress/e2e/backend.cy.js) test result:
+
+![List Of Products](/doc/images/1.png "List Of Products test result")
+
+- [Get Product current state](/backend/cypress/e2e/backend.cy.js) test result:
+
+![Current State of a product](/doc/images/2.png "get temperature of a beer")
+
+# code coverage
+
+in order to monitor the code coverage I utilize the cypress/code-coverage plugin
+and by using an excellent article in [this address](https://glebbahmutov.com/blog/backend-coverage/)
+now the report of code coverage is available [here](/doc/index.html) and you can browse and deep into the report.
 

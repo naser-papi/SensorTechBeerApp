@@ -4,6 +4,12 @@ const {data, AnalyzingCurrentTemp} = require("./Utils")
 const cors = require('cors');
 
 const app = express();
+// returns code coverage information if available
+// https://github.com/cypress-io/code-coverage
+/* istanbul ignore next */
+if (global.__coverage__) {
+    require('@cypress/code-coverage/middleware/express')(app)
+}
 const port = 8081;
 
 app.use(cors());

@@ -1,0 +1,19 @@
+{
+  "parent": null,
+  "pid": 15340,
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "D:\\papinaser\\telegram-bot\\SensorTechBeerApp\\backend\\index.js"
+  ],
+  "execArgv": [],
+  "cwd": "D:\\papinaser\\telegram-bot\\SensorTechBeerApp\\backend",
+  "time": 1687204038190,
+  "ppid": 19012,
+  "coverageFilename": "D:\\papinaser\\telegram-bot\\SensorTechBeerApp\\backend\\.nyc_output\\f9a36fda-3120-4924-9793-6b2f3aa9fcf5.json",
+  "externalId": "",
+  "uuid": "f9a36fda-3120-4924-9793-6b2f3aa9fcf5",
+  "files": [
+    "D:\\papinaser\\telegram-bot\\SensorTechBeerApp\\backend\\index.js",
+    "D:\\papinaser\\telegram-bot\\SensorTechBeerApp\\backend\\Utils.js"
+  ]
+}

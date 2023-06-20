@@ -66,15 +66,15 @@ the API test window.
 
 - [List Of Products](/backend/cypress/e2e/backend.cy.js) test result:
 
-![List Of Products](/doc/images/1.png "List Of Products test result")
+![List Of Products](/docs/images/1.png "List Of Products test result")
 
 - [Get Product current state](/backend/cypress/e2e/backend.cy.js) test result:
 
-![Current State of a product](/doc/images/2.png "get temperature of a beer")
+![Current State of a product](/docs/images/2.png "get temperature of a beer")
 
 # code coverage
 
 in order to monitor the code coverage I utilize the cypress/code-coverage plugin
 and by using an excellent article in [this address](https://glebbahmutov.com/blog/backend-coverage/)
-now the report of code coverage is available [here](/doc/index.html) and you can browse and deep into the report.
+now the report of code coverage is available [here](/docs/index.html) and you can browse and deep into the report.
 

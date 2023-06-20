@@ -76,5 +76,6 @@ the API test window.
 
 in order to monitor the code coverage I utilize the cypress/code-coverage plugin
 and by using an excellent article in [this address](https://glebbahmutov.com/blog/backend-coverage/)
-now the report of code coverage is available [here](/docs/index.html) and you can browse and deep into the report.
+now the report of code coverage is available [here](https://naser-papi.github.io/SensorTechBeerApp/) and you can browse
+and deep into the report.
 

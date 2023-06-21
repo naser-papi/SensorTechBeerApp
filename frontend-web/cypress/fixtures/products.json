@@ -22,5 +22,17 @@
     "name": "Stout",
     "minimumTemperature": 6,
     "maximumTemperature": 8
+  },
+  {
+    "id": "5",
+    "name": "Wheat beer",
+    "minimumTemperature": 3,
+    "maximumTemperature": 5
+  },
+  {
+    "id": "6",
+    "name": "Pale Ale",
+    "minimumTemperature": 4,
+    "maximumTemperature": 6
   }
 ]

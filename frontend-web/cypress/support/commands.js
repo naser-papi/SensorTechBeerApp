@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('seedAndVisit', (products = 'fixture:products') => {
+Cypress.Commands.add('seedAndVisit', (products) => {
   cy.intercept('GET', 'http://localhost:8081/productList', {
     statusCode: 200,
     body: products,

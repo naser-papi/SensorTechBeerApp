@@ -148,12 +148,10 @@ table.coverage td {
     padding: 0;
     vertical-align: top;
 }
-
 table.coverage td.line-count {
     text-align: right;
     padding: 0 5px 0 20px;
 }
-
 table.coverage td.line-coverage {
     text-align: right;
     padding-right: 10px;
@@ -165,7 +163,6 @@ table.coverage td span.cline-any {
     padding: 0 5px;
     width: 100%;
 }
-
 .missing-if-branch {
     display: inline-block;
     margin-right: 5px;
@@ -363,11 +360,9 @@ span.cline-neutral {
     display: inline-block;
     height: 12px;
 }
-
 .chart {
     line-height: 0;
 }
-
 .cover-empty {
     background: white;
 }

@@ -19,17 +19,12 @@ Each craft beer has its own specific refrigeration needs while being transported
 - Beer 5 (Witbier): 3-5°C
 - Beer 6 (Pale Ale): 4-6°C
 
-The brewery rushed SensorTech to deliver a working solution before the annual Craft Beer
-Festival, when sales (and delivery) of beer goes through the roof. As it unfortunately tends to
-happen, their engineers didn't pay much attention to design, code quality or automated testing
-in order to hit the date. But SensorTech has now hired Pragmateam to improve and deliver new
-features to this solution.
-As a Pragmateam software engineer, this is your
-first week working with this client and you are
-currently on a break from the Discovery workshop,
-where the team is planning the next release. You
-decide to pick up a card from the Tech Debt
-Backlog and work on it. The card says:
+The brewery rushed SensorTech to deliver a working solution before the annual Craft Beer Festival, when sales (and
+delivery) of beer go through the roof. As it unfortunately tends to happen, their engineers didn't pay much attention to
+design, code quality or automated testing in order to hit the date. But SensorTech has now hired Pragmateam to improve
+and deliver new features to this solution. As a Pragmateam software engineer, this is your first week working with this
+client, and you are currently on a break from the Discovery workshop, where the team is planning the next release. You
+decide to pick up a card from the Tech Debt Backlog and work on it. The card says:
 Improve test coverage (refactor if needed)
 
 ## solution
@@ -39,20 +34,20 @@ temperature of each beer container in the Brewery trucks.
 I changed the project from tow separated repo to a single repo with my favorite structure.
 this project has two folders:
 
-- 1- Backend (contains a very simple code to manage needed APIs about sensors statues)
+- 1- Backend (contains a very simple code to manage needed APIs about sensor statues)
 
 - 2- frontend-web (contains a CRA code to show the list of sensors and current states)
 
 # backend
 
-we have tow different get route in the backed code:
+we have two different get routes in the back code:
 
 - /api/productList that returns the list of available products (beers)
   - here is the source code: [click here](/backend/index.js)
 - /api/temperature/:id that return current temperature of beer each holder by passed id
   - you can see the code here: [click here](/backend/index.js)
   - this method uses a utility function to normalize the result object with a specific property named "status" that
-    shows how far temperature is away from normal temp.
+    shows how far the temperature is away from normal temp.
 
 # backed tests
 
@@ -153,4 +148,6 @@ in order to monitor the code coverage, I utilize the cypress/code-coverage plugi
 in [this address,](https://glebbahmutov.com/blog/backend-coverage/)
 now the report of code coverage is available [here](https://naser-papi.github.io/SensorTechBeerApp/) and you can browse
 and deep into the report.
+
+# CI with docker 
 
